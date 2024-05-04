@@ -1,0 +1,139 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --col-primary: #FFD2BE;
+    --col-cream: #F9F7E1;
+    --col-off-black: #0C1720;
+    --col-light-grey: rgb(151, 151, 151);
+
+    --fs-heading-1: 4rem;
+    --fs-heading-2: 3.25rem;
+    --fs-heading-3: 2.5rem;
+    --fs-heading-4: 2.25rem;
+    --fs-paragraph-l: 1.25rem;
+    --fs-paragraph: 1rem;
+    --fs-caption: .75rem;
+
+    --fw-bold: 600;
+
+    --br-small: 4px;
+    --br-regular: 10px;
+
+    --header-height: 80px;
+    --footer-height: 40px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: var(--col-cream);
+    color: var(--col-off-black);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+h1 {
+    font-size: var(--fs-heading-1);
+}
+
+h4 {
+    font-size: var(--fs-heading-4);
+    letter-spacing: -2px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+}
+
+p {
+    font-size: var(--fs-paragraph);
+}
+
+.btn {
+    align-self: flex-start;
+    padding: 12px 8px;
+    border: none;
+    border-radius: var(--br-small);
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 70%;
+}
+.btn:active {
+    opacity: 80%;
+}
+
+.btn-primary {
+    background-color: var(--col-primary);
+}
+
+.error-text {
+    font-size: var(--fs-caption);
+    color: crimson;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: var(--br-regular);
+    background-color: var(--col-off-black);
+    color: white;
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.form input {
+    padding: 12px 8px;
+    border: none;
+    border-radius: var(--br-small);
+}
+.form input:focus {
+    outline-color: var(--col-primary);
+    color: var(--col-light-grey); /* Change this to the text color you want */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-container button {
+    color: var(--col-off-black);
+}
+
+.logo {
+    font-size: var(--fs-heading-4);
+    font-weight: var(--fw-bold);
+    letter-spacing: -3px;
+}
+
+.main-container {
+    height: calc(100vh - 120px);
+}
+
+.text-primary {
+    color: var(--col-primary);
+}
